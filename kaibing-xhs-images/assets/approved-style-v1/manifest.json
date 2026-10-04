@@ -1,0 +1,59 @@
+{
+  "name": "凯冰白底编辑图文 v1",
+  "approved_date": "2026-10-04",
+  "scope": "project",
+  "user_confirmation": "可以，先固定",
+  "reuse": "参考视觉系统与信息组织，不复制题材、文案、姿势或固定页数",
+  "identity_reference": "assets/identity/article-q/views/front-three-quarter.png",
+  "pages": [
+    {
+      "file": "assets/approved-style-v1/01-封面.png",
+      "page": 1,
+      "role": "cover",
+      "sha256": "d7e7881a321af1d5abee2cc24cdbfaf35553e54676a0f21d14d9865f99131d9b"
+    },
+    {
+      "file": "assets/approved-style-v1/02-理解与验收.png",
+      "page": 2,
+      "role": "comparison",
+      "sha256": "c2a651f510e7da1c5a25ac75ebcdee5db26b1818e2065b62f5500309f668f0ee"
+    },
+    {
+      "file": "assets/approved-style-v1/03-选择解释形式.png",
+      "page": 3,
+      "role": "explanation-list",
+      "sha256": "2f5a9155aa8cc2b6f42583b75755e54e43323c3e37653a51fdc6ea76c409814e"
+    },
+    {
+      "file": "assets/approved-style-v1/04-软件草稿纸.png",
+      "page": 4,
+      "role": "character-choice",
+      "sha256": "0ad4be22ab4b4863c827090bfa80d277d3f3b4835415d857a446b5dc8db3506e"
+    },
+    {
+      "file": "assets/approved-style-v1/05-清晰表达规则.png",
+      "page": 5,
+      "role": "writing-rules",
+      "sha256": "03cd09dbcfded088e55002999a070d73707764ff8d731e2ba2824ce1958d8c39"
+    },
+    {
+      "file": "assets/approved-style-v1/06-检验理解.png",
+      "page": 6,
+      "role": "character-self-test",
+      "sha256": "1a614a6ef2c36e9c44d48c3e065837f44b0cfec67aee6c505ccb14a7607f2b0d"
+    },
+    {
+      "file": "assets/approved-style-v1/07-Codex验收清单.png",
+      "page": 7,
+      "role": "acceptance-list",
+      "sha256": "bf78ded3527121e7212fb40f846433285bbd26cc175f8d86274c7b9b5e10e22d"
+    },
+    {
+      "file": "assets/approved-style-v1/08-提问模板.png",
+      "page": 8,
+      "role": "prompt-template",
+      "sha256": "14a886fab0935d2a641776f053387c2291291dfedf37394de317e0252db3f236"
+    }
+  ],
+  "source_note": "用户已确认的《AI 做完了，你看懂了吗？》8 页定制测试成品，仅作为风格参考。"
+}
