@@ -313,7 +313,7 @@ With confirmed outline + style + layout + palette:
 
 Generation flow:
 
-1. Write each selected full prompt using `references/workflows/prompt-assembly.md`; record copy, layout and actual reference roles before invoking the tool.
+1. Write each selected full prompt using `references/workflows/prompt-assembly.md`; keep publish copy separate from production metadata, run the integration guide's copy check, and record layout and actual reference roles before invoking the tool.
 2. Generate one sample (cover by default, or the user's chosen interior) with its real references. Save original and 1080×1440 final, then inspect character, text and phone-size readability.
 3. Show the sample and wait for review unless continuation is already authorized. A technical pass does not imply the user approved its design.
 4. Generate remaining authorized pages, recording direct identity refs on each character page and style/evidence refs when applicable. Use the approved cover as style anchor once available; if an interior was reviewed first, use that as temporary style reference until the cover is approved.

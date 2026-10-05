@@ -258,4 +258,6 @@ Three strategies should differ meaningfully:
 - **Evidence Status**：官方案例 / 本轮实际结果 / 概念示意 / 待补素材。
 - **Render Mode**：full-card / real-font，按集成指南选择。
 
+`Text Content` 是上图文字；`Evidence Status` 与其他制作字段按集成指南留在记录中。确需上图帮助读者判断素材时，可加 `Reader Disclosure`（该句原文）与 `Disclosure Reason`（必要原因）；不为普通插画自动填这两项。
+
 不额外凑固定页数，按内容选择每页布局；样张确认前不生成整套。
