@@ -41,6 +41,8 @@ NN-{type}-[slug].md (in prompts/)
 
 ### Density-Based Layouts
 
+下表的条目数与留白比例仅作布局起点。凯冰白底编辑图文按[内容表达规则](../editorial-content.md)决定正文密度，允许连续段落与完整解释，不以固定行数或比例截断内容。
+
 | Layout | When to Use | Info Points | Whitespace |
 |--------|-------------|-------------|------------|
 | sparse | Covers, quotes, impact statements | 1-2 | 60-70% |
@@ -63,7 +65,7 @@ NN-{type}-[slug].md (in prompts/)
 | Setup | balanced | Context without overwhelming |
 | Core | balanced/dense/list | Match content density |
 | Payoff | balanced/list | Clear takeaways |
-| Ending | sparse | Clean CTA, memorable |
+| Ending | balanced/list/dense/sparse | Match the actual conclusion, question or reusable template |
 
 ## Outline Format
 
@@ -220,7 +222,7 @@ Notion界面风格，简洁黑白配色
 
 ## Swipe Hook Strategies
 
-Each image should end with a hook for the next:
+Transitions are optional. For the Kaibing editorial default, prefer the next question in the argument over generic teaser copy; examples below are format references, not required image text:
 
 | Strategy | Example |
 |----------|---------|
@@ -251,13 +253,16 @@ Three strategies should differ meaningfully:
 
 上面的条目格式和布局建议继续使用，示例文案与视觉描述仅说明格式，不作为当前文章事实或默认科技配色。默认项目风格以 EXTEND.md 为准。
 
-每页规划时补充下面四项；真实素材缺失写“待补”，人物缺席写“无人物，仅保留署名”。
+每页规划时补充下面项目；真实素材缺失在规划中写“待补”，人物缺席写“无人物，仅保留署名”。完整段落与清单都可用于Text Content，不把例子里的Points当作强制结构。
 
-- **Character**：q / none；如出现，写具体动作和移除后失去的理解线索。
+- **Page Question / Complete Copy**：本页回答的问题与准确完整文案，保留必要理由、例子、条件或后果。
+- **Visual Contribution**：画面让读者看见什么，与正文如何分工。
+- **Character**：q / none；如出现，写所经历的事件、动作、目光、接触点和移除后失去的理解线索。
 - **References**：实际身份 / 风格 / 证据文件与各自用途。
 - **Evidence Status**：官方案例 / 本轮实际结果 / 概念示意 / 待补素材。
 - **Render Mode**：full-card / real-font，按集成指南选择。
+- **Review Focus**：本页特有的状态、选择结果、方向与来源检查，以及手机宽度阅读重点。
 
-`Text Content` 是上图文字；`Evidence Status` 与其他制作字段按集成指南留在记录中。确需上图帮助读者判断素材时，可加 `Reader Disclosure`（该句原文）与 `Disclosure Reason`（必要原因）；不为普通插画自动填这两项。
+`Complete Copy` 对应本页的 `Text Content`，完整文案只在 `Text Content` 维护，不另存第二份。`Text Content` 是上图文字；`Evidence Status` 与其他制作字段按集成指南留在记录中。确需上图帮助读者判断素材时，可加 `Reader Disclosure`（该句原文）与 `Disclosure Reason`（必要原因）；不为普通插画自动填这两项。
 
-不额外凑固定页数，按内容选择每页布局；样张确认前不生成整套。
+不额外凑固定页数或自动追加品牌尾页，按内容选择每页布局；样张检查后按当前任务授权继续，已明确授权整套时不重复询问。
