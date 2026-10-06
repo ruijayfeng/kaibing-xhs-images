@@ -59,5 +59,24 @@
   "project_preferences": ".baoyu-skills/kaibing-xhs-images/EXTEND.md",
   "bundled_defaults": "references/config/default-preferences.md",
   "production_note": "已实际生成并由用户确认的八页定制样例；整页生成，字形由模型绘制。新内容仍需实际验收。",
-  "scope": "仅包含此 Skill 及其运行参考、身份资产、确认样例与默认配置；不含其他 Skill、原文章、生成日志、备份或账号配置。"
+  "scope": "仅包含此 Skill 及其运行参考、身份资产、确认样例与默认配置；不含其他 Skill、原文章、生成日志、备份或账号配置。",
+  "editorial_revision": {
+    "date": "2026-10-06",
+    "guide": "references/editorial-content.md",
+    "scope": "content completeness, interior hierarchy, visual contribution, character scene semantics, evidence placement and phone-size review",
+    "basis": "explanatory interior iteration and five-page article production; no new approved visual baseline",
+    "visual_baseline": "凯冰白底编辑图文 v1; existing eight approved assets retained",
+    "signature_ending": "deferred; no fixed brand closing page added",
+    "release_note": "main rules update; existing v1.0.0 release archive unchanged",
+    "changed_rules": [
+      "SKILL.md",
+      "references/editorial-content.md",
+      "references/kaibing-integration.md",
+      "references/approved-style.md",
+      "references/workflows/analysis-framework.md",
+      "references/workflows/outline-template.md",
+      "references/workflows/prompt-assembly.md",
+      "references/config/default-preferences.md"
+    ]
+  }
 }

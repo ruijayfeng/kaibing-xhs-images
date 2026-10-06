@@ -51,6 +51,8 @@
 
 这些是**加入凯冰 IP 后的定制成果**。随包保存为视觉参考，新主题的文案、分页、动作和构图重新设计。
 
+main 已加入 2026-10-06 的[内容表达改进](kaibing-xhs-images/references/editorial-content.md)：内页保留完整解释与具体例子，标题贴近正文尺度，图像承担选择、过程或关系信息。上面的八页仍是原有确认基准，新规则不会自动把测试图列为新的确认样例。
+
 ## 它能帮你完成什么
 
 输入一篇文章、一组观点或工具素材，助手通过这个 Skill 安排内容与画面，调用当前可用的图像工具完成制作。
@@ -69,13 +71,15 @@
 |---|---|
 | **整套气质** | 白底、深灰文字，暗红强调、冰蓝辅助；留白充分、少装饰 |
 | **封面** | 大标题；Q 版凯冰与一个主题对象形成动作或选择关系 |
-| **内页** | 标题明显小于封面；按内容使用对比、流程、清单、规则、模板 |
+| **内页** | 标题明显小于封面；允许完整段落，按内容使用场景、对比、关系图、真实证据、清单或模板 |
 | **人物出现** | 需要解释、选择、体验或自测时出现；步骤与证据页优先留给信息 |
 | **身份一致** | 实际传入原始 Q 版参考，保留白帽红星、冰蓝短发、暗红开衫 |
 | **作者署名** | 克制的 `凯冰 · NN / TOTAL` 页脚 |
 | **画幅尺寸** | 3:4 竖版；最终等比整理为 1080×1440 |
 
 人物参考负责锁定身份，当前内容决定姿势与构图。对于解释型角色场景，规划时会检查：**去掉凯冰，本页会失去什么理解线索、选择关系或动作张力？**
+
+随后检查具体事件、目光、手与对象的接触，以及分类、状态和结果是否对应。结尾完成当篇的总结或可用内容，当前不自动追加固定品牌尾页。
 
 基础能力改装自 `baoyu-xhs-images` 2.0.1，保留 **12 种风格、8 种布局**；明确要求时可选择其他风格，凯冰身份继续保持。
 
@@ -98,6 +102,8 @@ cp -R kaibing-xhs-images/kaibing-xhs-images .agents/skills/
 已有同名 Skill 时先备份再更新。重新载入项目或开启新会话，让助手发现 Skill。
 
 也可从 [Releases](https://github.com/ruijayfeng/kaibing-xhs-images/releases) 下载 ZIP，将解压后的内部 `kaibing-xhs-images/` 目录复制到目标项目的 `.agents/skills/`。
+
+本次制作规则更新在 main；现有 v1.0.0 ZIP 保留发布时内容，需要最新规则时使用上面的仓库安装方式。
 
 <details>
 <summary><strong>默认偏好与项目配置</strong></summary>
@@ -151,14 +157,14 @@ cp -R kaibing-xhs-images/kaibing-xhs-images .agents/skills/
 
 | 阶段 | 具体动作 |
 |---|---|
-| **理解内容** | 提炼主线、读者目标与需要说明的边界 |
-| **安排页面** | 写逐页文案，按信息关系选择布局 |
+| **理解内容** | 提炼主线、读者问题、完整解释与需要说明的边界 |
+| **安排页面** | 写逐页完整文案与画面贡献，按信息关系选择布局 |
 | **构思画面** | 确定凯冰是否出现、具体动作及主题对象 |
 | **准备出图** | 保存完整提示词，实际查看并传入身份与风格参考 |
-| **生成检查** | 核对中文、人物、信息层级、页脚与手机阅读效果 |
+| **生成检查** | 核对中文、人物接触、状态与结果对应、信息层级、页脚与手机阅读效果 |
 | **整理交付** | 保存独立图片、配文、提示词、参考来源与生成记录 |
 
-真实截图、官方案例、本轮生成结果与概念示意分别标明；真实材料缺失时标注待补。
+真实截图、官方案例、本轮生成结果、个人判断与概念示意在规划和制作记录中区分，正文准确表达。正式画面不自动添加“概念示例”等制作标签；必要的来源署名可以保留，真实材料缺失时在规划中记录待补。
 
 ## 出图条件与边界
 
@@ -170,7 +176,7 @@ cp -R kaibing-xhs-images/kaibing-xhs-images .agents/skills/
 | 额外密钥 | 上述测试未新增 API 密钥；每次运行仍检查工具、权限与额度 |
 | 其他环境 | 先核对出图与角色参考输入能力；缺少时明确说明阻塞点 |
 | 中文文字 | 当前样例采用整页生成，字形由模型绘制，逐页核对错字与可读性 |
-| 真实字体 | 可选制作分支，依赖环境中可用的排版工具与真实中文字体 |
+| 真实字体 | 需要确定文字或保留真实截图时，可用当前可用字体整页排版；新插画先生成无字母版 |
 | 一致性 | 使用身份与风格参考，并检查新结果；新主题可能需要迭代 |
 | 发布 | 交付图文文件，由用户审查和发布 |
 
@@ -189,6 +195,7 @@ cp -R kaibing-xhs-images/kaibing-xhs-images .agents/skills/
     ├── LICENSE
     ├── references/
     │   ├── approved-style.md    # 已确认的视觉基准
+    │   ├── editorial-content.md # 完整解释、图文分工与验收
     │   ├── kaibing-integration.md
     │   ├── config/             # 默认偏好与配置格式
     │   ├── kevinbee/           # 原始角色规范快照
@@ -203,7 +210,7 @@ cp -R kaibing-xhs-images/kaibing-xhs-images .agents/skills/
 
 只收录这个 Skill 的必要资料；没有带入其他 Skill、原文章、测试日志、备份、环境目录、本机路径或密钥。
 
-**规则入口**：[Skill](kaibing-xhs-images/SKILL.md) · [凯冰集成](kaibing-xhs-images/references/kaibing-integration.md) · [视觉基准](kaibing-xhs-images/references/approved-style.md) · [默认配置](kaibing-xhs-images/references/config/default-preferences.md)
+**规则入口**：[Skill](kaibing-xhs-images/SKILL.md) · [内容表达](kaibing-xhs-images/references/editorial-content.md) · [凯冰集成](kaibing-xhs-images/references/kaibing-integration.md) · [视觉基准](kaibing-xhs-images/references/approved-style.md) · [默认配置](kaibing-xhs-images/references/config/default-preferences.md)
 
 ## 来源与许可
 

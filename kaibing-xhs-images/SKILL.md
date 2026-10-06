@@ -18,6 +18,8 @@ metadata:
 
 本地改装来源与文件摘要见 [references/provenance.json](references/provenance.json)。用户当前要求与已确认偏好优先；不同时加载另外两个小红书 Skill 的全部流程。
 
+分析、分页、组装提示词与验收时须读取 [references/editorial-content.md](references/editorial-content.md)：以完整问题和具体解释决定密度，设计文字与图像的分工，再检查手机阅读与场景语义。它优先于原有布局表中的条目数和留白比例建议；已确认视觉样例继续锁定身份、配色与整体气质。
+
 ## User Input Tools
 
 When this skill prompts the user, follow this tool-selection rule (priority order):
@@ -289,6 +291,7 @@ output/小红书/{YYYY-MM-DD}/{topic-slug}/
 
 1. Save the source (backup rule applies if `source.md` exists).
 2. Run the deep analysis in `references/workflows/analysis-framework.md`: content type, hook potential, audience, engagement signals, visual opportunity map, swipe flow.
+   同时按 `references/editorial-content.md` 写清每页要回答的问题、完整解释、画面贡献和来源身份，避免将观点文章直接拆成提纲。
 3. Detect source language, pick recommended image count (2-10).
 4. 用户选择优先，其次采用保存的风格与布局；只有未指定的维度才用 Auto-Selection 表推荐。封面 sparse，内页 balanced 为起点，按内容选 comparison / flow / list 等，不强制统一模块网格。
 5. Write everything to `analysis.md`.
@@ -353,7 +356,7 @@ Images: N total
 |----------|---------|----------------|
 | Cover (image 1) | Hook + visual impact | `sparse` |
 | Content (middle) | Core value per image | `balanced` / `dense` / `list` / `comparison` / `flow` |
-| Ending (last) | CTA / summary | `sparse` or `balanced` |
+| Ending (last) | 本篇总结、问题或可用模板 | 按内容选 `balanced` / `list` / `dense` / `sparse` |
 
 For the style × layout compatibility matrix, see the **Style × Layout Matrix** above.
 
@@ -378,6 +381,7 @@ Text correction policy:
 | File | Content |
 |------|---------|
 | `references/confirmation.md` | Optional question formats for genuinely missing decisions |
+| `references/editorial-content.md` | 内容完整性、段落密度、图文分工、场景语义与手机阅读验收 |
 | `references/style-presets.md` | Full preset shortcut definitions |
 | `references/presets/<style>.md` | Per-style element definitions |
 | `references/palettes/<name>.md` | Per-palette color definitions |

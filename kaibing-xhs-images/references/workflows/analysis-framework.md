@@ -4,6 +4,8 @@ Deep analysis framework tailored for Xiaohongshu's unique engagement patterns.
 
 ## Purpose
 
+凯冰项目分析同时读取[内容表达规则](../editorial-content.md)。在分页前写出每页的读者问题、完整回答、来源身份和画面贡献；该规则优先于本文示例的条目数量与营销式过渡。观点文章保留必要因果、例子和边界，不能仅提取关键词。
+
 Before creating infographics, thoroughly analyze the source material to:
 - Maximize hook power and swipe motivation
 - Identify save-worthy and share-worthy elements
@@ -107,15 +109,14 @@ Plan the narrative arc across images:
 |----------|---------|---------------|
 | **Cover (封面)** | Stop scrolling | 最强视觉冲击 + 核心标题 |
 | **Setup (铺垫)** | Build context | 痛点共鸣 / 好奇心 |
-| **Core (核心)** | Deliver value | 干货内容，每页1-2个要点 |
+| **Core (核心)** | Deliver value | 完整回答本页问题，按需要保留解释、案例或证据 |
 | **Payoff (收获)** | Practical takeaway | 可执行的行动建议 |
-| **Ending (结尾)** | Drive action | CTA + 互动引导 |
+| **Ending (结尾)** | Complete the argument | 当篇总结、具体问题或可用模板 |
 
 **Swipe Motivation Between Images**:
-- End each image with a hook for the next
-- Use "下一页更精彩" type transitions
-- Create information gaps that require swiping
-- Build anticipation through numbering ("第3个最重要")
+- Use the next page to answer a question raised by the current evidence or example
+- Preserve a coherent case or argument across pages when it helps understanding
+- Add a transition only when it clarifies the progression; keep necessary explanation on the current page
 
 ## Output Format
 
@@ -195,4 +196,6 @@ Before proceeding to outline generation:
 - [ ] Have I identified save/share triggers?
 - [ ] Are there clear visual opportunities?
 - [ ] Is the swipe flow planned?
+- [ ] Does each page question have a complete answer, with its necessary reason, example or condition retained?
+- [ ] Have I recorded what the image contributes and distinguished source facts from personal inference?
 - [ ] Have I identified the best style+layout recommendation?
