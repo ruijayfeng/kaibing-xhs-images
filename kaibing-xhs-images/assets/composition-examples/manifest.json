@@ -1,0 +1,35 @@
+{
+  "name": "内容驱动构图制作验证",
+  "date": "2026-10-07",
+  "identity_reference": "assets/identity/article-q/views/front-three-quarter.png",
+  "user_feedback": "差不多有点感觉了；进一步固定观感并提升后续质量",
+  "approval_scope": "用户认可方向；本张修订图由助手核对，未宣称用户逐张确认",
+  "reuse": "用于状态分支与覆盖确认动作；其他关系重新构图，样例不固定全套列数、角色位置或配色的状态含义",
+  "pages": [
+    {
+      "file": "assets/composition-examples/feature-branches.png",
+      "role": "state-branches-and-confirmation",
+      "sha256": "b392123884567546970881d42bbb2d2ecfc07d61bce5089ea6a08dc98f4b2a28",
+      "dimensions": [
+        1080,
+        1440
+      ],
+      "review": {
+        "text": "完整文案各一次；补回处理中标签并清除重复审查句",
+        "relationship": "输入到处理；成功/失败分支；失败返回处理",
+        "identity": "身份参考已加载；护住旧稿并阻止覆盖",
+        "phone_preview_width": 360,
+        "phone_readability": "实际查看，正文与节点信息可读",
+        "user_approved": false
+      },
+      "production": {
+        "tool": "image_gen__imagegen",
+        "mode": "full-card followed by targeted native image edit",
+        "font": "model-drawn; no exact font-size claim",
+        "identity_sha256": "7c19f4c380beabd43727e83103f0ed4ef1daa4b5da2bc6a0bf12ef1390a0abbf",
+        "original_sha256": "49738042422445486eaee18df26c6a701aef34e1e63a270db78f4c4ef354f65a",
+        "size_processing": "proportional downscale to 1080x1440; no crop or stretch"
+      }
+    }
+  ]
+}

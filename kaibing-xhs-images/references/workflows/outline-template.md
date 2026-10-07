@@ -251,17 +251,17 @@ Three strategies should differ meaningfully:
 
 ## 凯冰改装补充
 
-上面的条目格式和布局建议继续使用，示例文案与视觉描述仅说明格式，不作为当前文章事实或默认科技配色。默认项目风格以 EXTEND.md 为准。
+上面的条目格式和布局词汇可供描述；位置推荐不决定实际构图，示例文案与视觉描述仅说明格式，不作为当前文章事实或默认科技配色。默认项目风格以 EXTEND.md 为准。
 
 每页规划时补充下面项目；真实素材缺失在规划中写“待补”，人物缺席写“无人物，仅保留署名”。完整段落与清单都可用于Text Content，不把例子里的Points当作强制结构。
 
 - **Page Question / Complete Copy**：本页回答的问题与准确完整文案，保留必要理由、例子、条件或后果。
-- **Visual Contribution**：画面让读者看见什么，与正文如何分工。
+- **Visual Contribution / Composition**：画面让读者看见什么，与正文如何分工；具体写清内容关系、视觉中心、空间安排与阅读路线，而不只填一个布局名称。
 - **Character**：q / none；如出现，写所经历的事件、动作、目光、接触点和移除后失去的理解线索。
 - **References**：实际身份 / 风格 / 证据文件与各自用途。
 - **Evidence Status**：官方案例 / 本轮实际结果 / 概念示意 / 待补素材。
 - **Render Mode**：full-card / real-font，按集成指南选择。
-- **Review Focus**：本页特有的状态、选择结果、方向与来源检查，以及手机宽度阅读重点。
+- **Review Focus**：本页特有的状态、选择结果、方向与来源检查，以及手机宽度阅读重点；结合整套检查重复构图是否有内容理由。
 
 `Complete Copy` 对应本页的 `Text Content`，完整文案只在 `Text Content` 维护，不另存第二份。`Text Content` 是上图文字；`Evidence Status` 与其他制作字段按集成指南留在记录中。确需上图帮助读者判断素材时，可加 `Reader Disclosure`（该句原文）与 `Disclosure Reason`（必要原因）；不为普通插画自动填这两项。
 

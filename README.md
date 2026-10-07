@@ -51,7 +51,13 @@
 
 这些是**加入凯冰 IP 后的定制成果**。随包保存为视觉参考，新主题的文案、分页、动作和构图重新设计。
 
-main 已加入 2026-10-06 的[内容表达改进](kaibing-xhs-images/references/editorial-content.md)：内页保留完整解释与具体例子，标题贴近正文尺度，图像承担选择、过程或关系信息。上面的八页仍是原有确认基准，新规则不会自动把测试图列为新的确认样例。
+v1.1.0 已加入[内容表达与构图改进](kaibing-xhs-images/references/editorial-content.md)：内页保留完整解释与具体例子，标题贴近正文尺度，图像承担选择、过程或关系信息。上面的八页保留为历史视觉参考。2026-10-07用户认可内容驱动构图与角色参与的新方向；当前固定清爽配色、正文层级与角色身份，页面空间随内容关系安排。新制作验证样例记录认可范围，逐页质量仍需实际验收。
+
+### 当前构图验证
+
+<img src="kaibing-xhs-images/assets/composition-examples/feature-branches.png" width="360" alt="状态分支和凯冰保护已有修改的修订样例">
+
+这张制作样例用分支表达功能行为，用凯冰的动作解释覆盖前确认；只适用于相应关系。已核对完整文案与360px预览，用户认可的是方向，未将其记为逐张确认。[来源与验证范围](kaibing-xhs-images/assets/composition-examples/manifest.json)。
 
 ## 它能帮你完成什么
 
@@ -72,7 +78,7 @@ main 已加入 2026-10-06 的[内容表达改进](kaibing-xhs-images/references/
 | **整套气质** | 白底、深灰文字，暗红强调、冰蓝辅助；留白充分、少装饰 |
 | **封面** | 大标题；Q 版凯冰与一个主题对象形成动作或选择关系 |
 | **内页** | 标题明显小于封面；允许完整段落，按内容使用场景、对比、关系图、真实证据、清单或模板 |
-| **人物出现** | 需要解释、选择、体验或自测时出现；步骤与证据页优先留给信息 |
+| **人物出现** | 按当前事件参与提问、选择、体验或验证；真实证据保持清楚 |
 | **身份一致** | 实际传入原始 Q 版参考，保留白帽红星、冰蓝短发、暗红开衫 |
 | **作者署名** | 克制的 `凯冰 · NN / TOTAL` 页脚 |
 | **画幅尺寸** | 3:4 竖版；最终等比整理为 1080×1440 |
@@ -103,12 +109,12 @@ cp -R kaibing-xhs-images/kaibing-xhs-images .agents/skills/
 
 也可从 [Releases](https://github.com/ruijayfeng/kaibing-xhs-images/releases) 下载 ZIP，将解压后的内部 `kaibing-xhs-images/` 目录复制到目标项目的 `.agents/skills/`。
 
-本次制作规则更新在 main；现有 v1.0.0 ZIP 保留发布时内容，需要最新规则时使用上面的仓库安装方式。
+本次更新为 v1.1.0，main 与对应 Release ZIP 包含同一套规则；旧版 ZIP 保留发行时内容。
 
 <details>
 <summary><strong>默认偏好与项目配置</strong></summary>
 
-新项目没有配置时，读取[随包默认偏好](kaibing-xhs-images/references/config/default-preferences.md)：中文、凯冰白底编辑风格、balanced 内页起点、轻量署名和顺序出图。
+新项目没有配置时，读取[随包默认偏好](kaibing-xhs-images/references/config/default-preferences.md)：中文、凯冰白底编辑风格、按内容选择构图、轻量署名和顺序出图。
 
 如需保存或调整偏好，使用项目路径：
 
@@ -160,8 +166,8 @@ cp -R kaibing-xhs-images/kaibing-xhs-images .agents/skills/
 | **理解内容** | 提炼主线、读者问题、完整解释与需要说明的边界 |
 | **安排页面** | 写逐页完整文案与画面贡献，按信息关系选择布局 |
 | **构思画面** | 确定凯冰是否出现、具体动作及主题对象 |
-| **准备出图** | 保存完整提示词，实际查看并传入身份与风格参考 |
-| **生成检查** | 核对中文、人物接触、状态与结果对应、信息层级、页脚与手机阅读效果 |
+| **准备出图** | 保存正文与图内标签，实际传入身份图及适合当前关系的可选风格图 |
+| **生成检查** | 核对正文和标签、人物动作、关系方向与手机阅读；已知问题修订后再交付 |
 | **整理交付** | 保存独立图片、配文、提示词、参考来源与生成记录 |
 
 真实截图、官方案例、本轮生成结果、个人判断与概念示意在规划和制作记录中区分，正文准确表达。正式画面不自动添加“概念示例”等制作标签；必要的来源署名可以保留，真实材料缺失时在规划中记录待补。
@@ -208,7 +214,8 @@ cp -R kaibing-xhs-images/kaibing-xhs-images .agents/skills/
     │   └── elements/           # 布局、文字与视觉元素
     └── assets/
         ├── identity/           # 1 张实际使用的 Q 版身份参考
-        └── approved-style-v1/  # 8 张确认样例与清单
+        ├── approved-style-v1/  # 8 张历史确认样例与清单
+        └── composition-examples/ # 新方向制作验证与认可范围
 ```
 
 只收录这个 Skill 的必要资料；没有带入其他 Skill、原文章、测试日志、备份、环境目录、本机路径或密钥。

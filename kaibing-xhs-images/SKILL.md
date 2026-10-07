@@ -3,7 +3,7 @@ name: kaibing-xhs-images
 description: 使用凯冰 IP 制作小红书封面与图文卡片，沿用 baoyu-xhs-images 的风格、分页和布局体系；在用户要求凯冰图文、凯冰封面或将凯冰融入小红书内容时使用。
 metadata:
   upstream_version: "2.0.1"
-  local_variant: "kaibing-1"
+  local_variant: "kaibing-1.1"
   openclaw:
     homepage: https://github.com/ruijayfeng/kaibing-xhs-images
 ---
@@ -18,7 +18,7 @@ metadata:
 
 本地改装来源与文件摘要见 [references/provenance.json](references/provenance.json)。用户当前要求与已确认偏好优先；不同时加载另外两个小红书 Skill 的全部流程。
 
-分析、分页、组装提示词与验收时须读取 [references/editorial-content.md](references/editorial-content.md)：以完整问题和具体解释决定密度，设计文字与图像的分工，再检查手机阅读与场景语义。它优先于原有布局表中的条目数和留白比例建议；已确认视觉样例继续锁定身份、配色与整体气质。
+分析、分页、组装提示词与验收时须读取 [references/editorial-content.md](references/editorial-content.md)：以完整问题和具体解释决定密度，从内容关系构思整页，设计文字、人物与对象的阅读路线，再检查整套构图、手机阅读与场景语义。它优先于原有布局表中的条目数和留白比例建议；已确认视觉样例继续锁定身份、配色与整体气质。
 
 ## User Input Tools
 
@@ -49,7 +49,7 @@ After every prompt file for the current generation group has been saved and veri
 Priority order:
 
 1. Use the chosen backend's native batch / multi-task interface if it exists. Each task must keep its own prompt file, output path, aspect ratio, session ID, and direct reference images.
-2. If no native batch interface exists but the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` images at a time. Default: `4`. An explicit user request in the current message, such as `--batch-size 4` or "并行 4 张一起生成", overrides EXTEND.md.
+2. If no native batch interface exists but the runtime can issue parallel tool calls, dispatch up to `generation_batch_size` images at a time. Default: bundled `generation_batch_size` (currently `1`). An explicit user request in the current message, such as `--batch-size 4` or "并行 4 张一起生成", overrides EXTEND.md.
 3. If neither native batch nor parallel tool calls are available, generate sequentially.
 
 Rules:
@@ -78,7 +78,7 @@ Respond in the user's language across questions, progress, errors, and completio
 | `--palette <name>` | Color override: macaron / warm / neon |
 | `--preset <name>` | Style + layout + optional palette shorthand (see Presets below; per-preset prompt fragments in `references/style-presets.md`) |
 | `--ref <files...>` | Additional references; record identity / style / evidence roles |
-| `--batch-size <n>` | Temporary generation batch size for this run. Default: `generation_batch_size` from EXTEND.md, otherwise 4. Clamp to 1-8. |
+| `--batch-size <n>` | Temporary generation batch size for this run. Default: `generation_batch_size` from EXTEND.md, otherwise bundled defaults. Clamp to 1-8. |
 | `--yes` | Non-interactive: skip all confirmations, use EXTEND.md or built-in defaults, auto-confirm recommended plan (Path A) |
 
 ## Dimensions
@@ -252,7 +252,7 @@ Three differentiated approaches — each produces a structurally different outli
 
 用户提供的风格图片可提取布局规律；已确认的本套封面可作为风格参考。后续页面即便无人物，也可传入封面作为风格参考，并明确只继承字体层级、颜色和边距。每页角色有无与版式由该页任务决定。
 
-具体参考选择、传参及记录格式见 `references/kaibing-integration.md`。素材文件先核实并查看，再复制到本轮 `refs/`；真实截图按原样保留，不把生成的示意界面当作实测。
+具体参考选择、传参及记录格式见 `references/kaibing-integration.md`。素材文件先核实并查看；根目录共享参考直接引用并记录来源，临时输入按需快照；真实截图按原样保留，不把生成的示意界面当作实测。
 
 ## File Layout
 
@@ -285,7 +285,7 @@ output/小红书/{YYYY-MM-DD}/{topic-slug}/
 
 读取项目 `.baoyu-skills/kaibing-xhs-images/EXTEND.md`，摘要说明风格、布局、署名、语言和后端。该文件使用原 Skill 支持的配置字段；角色绑定在集成指南中，不冒充原生配置字段。
 
-若配置缺失，读取 [随包默认配置](references/config/default-preferences.md)，直接用于本次任务；需要保存时仅复制到项目配置路径，已有配置不覆盖。仅保存到项目目录，不查找或修改全局配置。自定义 `kaibing-editorial` 沿用 minimal 的布局兼容性。
+若配置缺失，读取 [随包默认配置](references/config/default-preferences.md)，直接用于本次任务；需要保存时仅复制到项目配置路径，已有配置不覆盖。仅保存到项目目录，不查找或修改全局配置。自定义 `kaibing-editorial` 借用 minimal 的克制视觉语言；空间构图按内容表达规则重新设计。
 
 ### Step 1: Analyze Content → `analysis.md`
 
@@ -293,7 +293,7 @@ output/小红书/{YYYY-MM-DD}/{topic-slug}/
 2. Run the deep analysis in `references/workflows/analysis-framework.md`: content type, hook potential, audience, engagement signals, visual opportunity map, swipe flow.
    同时按 `references/editorial-content.md` 写清每页要回答的问题、完整解释、画面贡献和来源身份，避免将观点文章直接拆成提纲。
 3. Detect source language, pick recommended image count (2-10).
-4. 用户选择优先，其次采用保存的风格与布局；只有未指定的维度才用 Auto-Selection 表推荐。封面 sparse，内页 balanced 为起点，按内容选 comparison / flow / list 等，不强制统一模块网格。
+4. 用户选择优先，其次采用保存的风格与布局；只有未指定的维度才用 Auto-Selection 表推荐。先按内容关系构思每页，再用 sparse、balanced、comparison、flow、list 等概括密度或关系；不由默认标签指定单列或统一模块网格。
 5. Write everything to `analysis.md`.
 
 ### Step 2: Smart Confirm
