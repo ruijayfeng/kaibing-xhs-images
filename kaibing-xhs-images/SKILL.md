@@ -3,7 +3,8 @@ name: kaibing-xhs-images
 description: 使用凯冰 IP 制作小红书封面与图文卡片，沿用 baoyu-xhs-images 的风格、分页和布局体系；在用户要求凯冰图文、凯冰封面或将凯冰融入小红书内容时使用。
 metadata:
   upstream_version: "2.0.1"
-  local_variant: "kaibing-1.1"
+  local_variant: "kaibing-1.2"
+  version: "1.2.0"
   openclaw:
     homepage: https://github.com/ruijayfeng/kaibing-xhs-images
 ---
@@ -19,6 +20,8 @@ metadata:
 本地改装来源与文件摘要见 [references/provenance.json](references/provenance.json)。用户当前要求与已确认偏好优先；不同时加载另外两个小红书 Skill 的全部流程。
 
 分析、分页、组装提示词与验收时须读取 [references/editorial-content.md](references/editorial-content.md)：以完整问题和具体解释决定密度，从内容关系构思整页，设计文字、人物与对象的阅读路线，再检查整套构图、手机阅读与场景语义。它优先于原有布局表中的条目数和留白比例建议；已确认视觉样例继续锁定身份、配色与整体气质。
+
+封面规划、生成与修改时须读取 [references/cover-concept.md](references/cover-concept.md)：先确定阅读承诺与表现方式，再设计主体、角色、场景材质和标题；在封面页保存 Cover Brief，按缩略图与内容语义复核。
 
 ## User Input Tools
 

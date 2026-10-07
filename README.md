@@ -53,6 +53,14 @@
 
 v1.1.0 已加入[内容表达与构图改进](kaibing-xhs-images/references/editorial-content.md)：内页保留完整解释与具体例子，标题贴近正文尺度，图像承担选择、过程或关系信息。上面的八页保留为历史视觉参考。2026-10-07用户认可内容驱动构图与角色参与的新方向；当前固定清爽配色、正文层级与角色身份，页面空间随内容关系安排。新制作验证样例记录认可范围，逐页质量仍需实际验收。
 
+### v1.2.0 封面构思与已认可样图
+
+<img src="kaibing-xhs-images/assets/approved-cover-v1/vibe-coding.png" width="360" alt="Vibe Coding：从想法到可验收的产品，凯冰将功能模块接入应用">
+
+2026-10-08 用户认可这张测试封面并要求固定发布。新增[封面构思方法](kaibing-xhs-images/references/cover-concept.md)：从文章承诺选择成果、事件、场景或主题审美，安排角色、素材与标题主次，并检查缩略图。主题材质有内容依据时可变化；内页继续保持清楚的阅读系统。
+
+样图实际检查了文字、身份、动作和 240px 阅读，保留 1086×1448 原图作参考。图纸细线与小署名较弱，验收主要由标题和检查符号表达；认可这一张不等于所有新选题已验证。[认可范围与来源](kaibing-xhs-images/assets/approved-cover-v1/manifest.json)。新文章重新构思，不照搬该场景。
+
 ### 当前构图验证
 
 <img src="kaibing-xhs-images/assets/composition-examples/feature-branches.png" width="360" alt="状态分支和凯冰保护已有修改的修订样例">
@@ -109,7 +117,7 @@ cp -R kaibing-xhs-images/kaibing-xhs-images .agents/skills/
 
 也可从 [Releases](https://github.com/ruijayfeng/kaibing-xhs-images/releases) 下载 ZIP，将解压后的内部 `kaibing-xhs-images/` 目录复制到目标项目的 `.agents/skills/`。
 
-本次更新为 v1.1.0，main 与对应 Release ZIP 包含同一套规则；旧版 ZIP 保留发行时内容。
+本次更新为 v1.2.0，main 与对应 Release ZIP 包含同一套规则；旧版 ZIP 保留发行时内容。
 
 <details>
 <summary><strong>默认偏好与项目配置</strong></summary>

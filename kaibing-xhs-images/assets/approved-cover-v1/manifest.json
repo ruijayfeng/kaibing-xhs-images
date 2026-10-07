@@ -1,0 +1,36 @@
+{
+  "name": "凯冰内容驱动封面 v1",
+  "date": "2026-10-08",
+  "identity_reference": "assets/identity/article-q/views/front-three-quarter.png",
+  "user_feedback": "那就先这样吧 就是先固定好推送 把版本给搞好",
+  "approval_scope": "用户认可当前测试封面并要求固定推送；本样图用于观感、身份与角色参与参考，不固定新文章的构图，也不代表全部主题已经验证。",
+  "reuse": "复用清爽配色、明确标题层级、身份和角色与对象的接触；新选题重新决定事件、景别、主体权重和标题位置。",
+  "pages": [
+    {
+      "file": "assets/approved-cover-v1/vibe-coding.png",
+      "role": "cover",
+      "sha256": "9b3bbf1679f1b06346b8fc710ddb6700b69fb52eef3514a0aa4726d8352b04e4",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "review": {
+        "text": "三行标题和署名核对正确",
+        "relationship": "纸面规划成为应用，双手将模块接入界面",
+        "phone_preview_width": 240,
+        "phone_readability": "实际浏览器预览，标题、身份和组装关系可辨；图纸细线与小署名较弱",
+        "user_approved": true
+      },
+      "production": {
+        "tool": "image_gen__imagegen",
+        "prompt": "assets/approved-cover-v1/prompt.md",
+        "identity_sha256": "7c19f4c380beabd43727e83103f0ed4ef1daa4b5da2bc6a0bf12ef1390a0abbf",
+        "size_processing": "保留3:4工具原图作为风格参考；不是1080×1440发布成品。"
+      },
+      "limitations": [
+        "验收主要由标题和检查符号表达",
+        "单主题测试，不证明跨主题稳定性"
+      ]
+    }
+  ]
+}

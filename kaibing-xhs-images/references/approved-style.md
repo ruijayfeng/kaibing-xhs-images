@@ -8,6 +8,8 @@
 
 需要判断新构图如何落地时，可查看 [构图验证](../assets/composition-examples/manifest.json) 中列出的制作样例及局限。它们用于理解图文关系，不作为通用版式，也不冒充用户逐张确认的成品。
 
+封面构思与主题化表达读取 [cover-concept.md](cover-concept.md)。下列白底观感是默认基准；与文章内容有明确关系的封面主题材质按该文件选择，人物身份与内页阅读系统仍按现有基准核对。2026-10-08 用户认可 Vibe Coding 测试封面并要求固定推送；[已认可封面及范围](../assets/approved-cover-v1/manifest.json)记录本次成图与 240px 检查。该样图可用于观感和角色参与参考，新主题仍需实际验收。
+
 ## 复用什么
 
 - 白底，深灰与克制暗红文字，冰蓝辅助；简洁无衬线字形与开放式信息分组。
@@ -26,7 +28,8 @@
 
 | 当前任务 | 参考样图（相对于 Skill 根目录） |
 |---|---|
-| 封面 | `assets/approved-style-v1/01-封面.png` |
+| 封面（当前内容驱动观感） | `assets/approved-cover-v1/vibe-coding.png` |
+| 封面（历史白底基准） | `assets/approved-style-v1/01-封面.png` |
 | 对比页 | `assets/approved-style-v1/02-理解与验收.png` |
 | 对应关系、形式选择 | `assets/approved-style-v1/03-选择解释形式.png` |
 | 人物参与选择 | `assets/approved-style-v1/04-软件草稿纸.png` |

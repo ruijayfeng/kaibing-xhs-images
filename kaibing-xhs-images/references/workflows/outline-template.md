@@ -266,3 +266,5 @@ Three strategies should differ meaningfully:
 `Complete Copy` 对应本页的 `Text Content`，完整文案只在 `Text Content` 维护，不另存第二份。`Text Content` 是上图文字；`Evidence Status` 与其他制作字段按集成指南留在记录中。确需上图帮助读者判断素材时，可加 `Reader Disclosure`（该句原文）与 `Disclosure Reason`（必要原因）；不为普通插画自动填这两项。
 
 不额外凑固定页数或自动追加品牌尾页，按内容选择每页布局；样张检查后按当前任务授权继续，已明确授权整套时不重复询问。
+
+封面页在 `Visual Concept` 中增加 `Cover Brief`，内容按 [封面构思](../cover-concept.md#保存和检查) 记录；普通内页不必填写。封面的 sparse 表示信息集中，不强制大片留白或固定人物大小。

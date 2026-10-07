@@ -5,3 +5,5 @@
 - 本包的分页、角色参与方式、白底编辑视觉和八页确认样例属于加入凯冰 IP 后的定制成果，不是 baoyu-xhs-images 或 XHS Visual Director 默认内置效果。
 - 本包没有包含 xhs-writer、xhs-visual-director、其他角色仓库、自动发布工具或额外图像服务。
 - `references/kevinbee/source-manifest.yaml` 是上游完整资产索引。本包实际附带的身份资产只有 `assets/identity/article-q/views/front-three-quarter.png`；其他图不视为已经安装。
+
+- 封面方法参考 [oh-my-cover-design](https://github.com/hongfamonvAI/oh-my-cover-design) 的公开构图说明及 AI红发魔女公开作品，独立整理内容判断与制作验收流程。本包未复制该项目模板或作者真人样图；已认可凯冰封面由本项目生成。
